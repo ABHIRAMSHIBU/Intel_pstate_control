@@ -1,4 +1,19 @@
 #!/usr/bin/python
+def license():
+	print("Copyright (C) 2016  Abhiram Shibu")
+	print("")
+	print("    This program is free software: you can redistribute it and/or modify")
+	print("    it under the terms of the GNU General Public License as published by")
+	print("    the Free Software Foundation, either version 3 of the License, or")
+	print("    (at your option) any later version.")
+	print("")
+	print("    This program is distributed in the hope that it will be useful,")
+	print("    but WITHOUT ANY WARRANTY; without even the implied warranty of")
+	print("    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the")
+	print("    GNU General Public License for more details.")
+	print("")
+	print("    You should have received a copy of the GNU General Public License")
+	print("    along with this program.  If not, see <http://www.gnu.org/licenses/>.\n")
 import sys                                        # To use know arguments using argv
 import os                                         # To execute shell commands
 def root_check():
@@ -30,6 +45,7 @@ def write_turbo(i):
 	write_t="echo "+write_t+" >> /sys/devices/system/cpu/intel_pstate/no_turbo"
 	os.system(write_t)
 def print_help():
+	license()
 	print("This program is written in python, tested in 3.0")
 	print("Normal usage 'intel_pstate_control <arguments>'")
 	print("Example Usage : intel_pstate_control -t 0 -max 100 -min 10 -s")
