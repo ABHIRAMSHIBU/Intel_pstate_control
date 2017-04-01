@@ -6,3 +6,4 @@ Any one is welcome to contribute and make this program more effective, use it, e
 1)<code> Git clone https://github.com/ABHIRAMSHIBU/Intel_pstate_control.git -b master </code><br>
 2)<code> cd Intel_pstate_control.git </code><br>
 3)<code> ./install </code> as root. ( Try <code> sudo ./install </code> or <code> su </code> then <code> ./install </code>
+4)Run the program help by using <code>psctrl -h</code>
